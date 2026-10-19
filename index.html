@@ -1,0 +1,225 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Para o Amor da Vida do Zéziinhoooo</title>
+   
+    <!-- Fonte que simula escrita à mão -->
+    <link href="https://fonts.googleapis.com/css2?family=Caveat:wght@400;600;700&display=swap" rel="stylesheet">
+   
+    <style>
+        :root {
+            --rosa-claro: #fce4ec;
+            --rosa-medio: #f48fb1;
+            --lilas-claro: #f3e5f5;
+            --lilas-medio: #ce93d8;
+            --texto: #4a148c; /* Roxo escuro para o texto */
+        }
+
+        body {
+            margin: 0;
+            padding: 20px;
+            background: linear-gradient(135deg, var(--lilas-claro), var(--rosa-claro));
+            font-family: 'Caveat', cursive;
+            display: flex;
+            justify-content: center;
+            min-height: 100vh;
+        }
+
+        /* O Caderno */
+        .caderno {
+            background-color: #fffafc;
+            width: 100%;
+            max-width: 650px;
+            border-radius: 8px;
+            box-shadow: 0 10px 30px rgba(206, 147, 216, 0.4);
+            position: relative;
+            overflow-y: auto;
+            max-height: 90vh; /* Permite rolagem dentro do caderno */
+        }
+
+        /* Linha vermelha/rosa da margem do caderno */
+        .caderno::before {
+            content: '';
+            position: absolute;
+            top: 0;
+            bottom: 0;
+            left: 50px;
+            width: 2px;
+            background-color: var(--rosa-medio);
+            opacity: 0.5;
+            z-index: 1;
+        }
+
+        /* Foto fixa no topo (Sticky) */
+        .foto-container {
+            position: sticky;
+            top: 0;
+            background: rgba(255, 250, 252, 0.95);
+            padding: 20px;
+            text-align: center;
+            z-index: 10;
+            border-bottom: 2px dashed var(--lilas-medio);
+            backdrop-filter: blur(5px); /* Efeito de vidro borrado */
+        }
+
+        .foto-container img {
+            max-width: 250px;
+            height: auto;
+            border: 4px solid var(--rosa-claro);
+            border-radius: 12px;
+            box-shadow: 0 4px 10px rgba(0,0,0,0.1);
+            transform: rotate(-2deg);
+            transition: transform 0.3s ease;
+        }
+
+        .foto-container img:hover {
+            transform: rotate(1deg) scale(1.05);
+        }
+
+        /* Área do texto e linhas do caderno */
+        .folha {
+            padding: 30px 40px 40px 70px; /* Espaço para a margem esquerda */
+            background-image: linear-gradient(transparent 95%, var(--lilas-claro) 5%);
+            background-size: 100% 2rem; /* Distância entre as linhas */
+            line-height: 2rem;
+            color: var(--texto);
+            font-size: 1.4rem;
+            z-index: 2;
+            position: relative;
+        }
+
+        .data {
+            text-align: right;
+            color: var(--rosa-medio);
+            font-size: 1.2rem;
+            margin-bottom: 20px;
+            font-weight: 600;
+        }
+
+        .carta-texto p {
+            margin: 0;
+            margin-bottom: 1rem;
+        }
+
+        .acrostico b {
+            color: var(--rosa-medio);
+            font-size: 1.8rem;
+        }
+
+        .ingles {
+            color: #7b1fa2;
+            font-style: italic;
+        }
+
+        /* Scrollbar personalizada */
+        ::-webkit-scrollbar {
+            width: 10px;
+        }
+        ::-webkit-scrollbar-track {
+            background: var(--lilas-claro);
+        }
+        ::-webkit-scrollbar-thumb {
+            background: var(--rosa-medio);
+            border-radius: 5px;
+        }
+    </style>
+</head>
+<body>
+
+    <div class="caderno" id="caderno">
+       
+        <!-- A foto ficará presa aqui ao rolar -->
+        <div class="foto-container">
+            <!-- Substitua o link do 'src' pelo link da foto de vocês -->
+            <img src="https://via.placeholder.com/250x250/fce4ec/f48fb1?text=Coloque+A+Nossa+Foto+Aqui" alt="Nossa Foto" id="foto-casal">
+        </div>
+
+        <div class="folha">
+            <div class="data">Recife, 19 de outubro de 2026</div>
+           
+            <div class="carta-texto">
+                <p>De: Zézinhoooo<br>
+                Para: O Amor da Vida do Zéziinhoooo (Minhaaa Mouuuurriiiiiiiiinhhhaaaa)</p>
+
+                <p>Existem dias que estamos para baixo, bem triste...<br>
+                E pior, sem vc pertinhooo de mim para eu ficar bem agarradinhooo com ocê....<br>
+                Buuuuutttttt (como eu aprendi com a mulher da minha vida).....<br>
+                Eu estou aqui para te lembrar o quanto que eu teeee ammooooooooo, minha Ingridiziiiinhaaaaaaa</p>
+
+                <p>É muito bom fazermos um charminho... um draminha....<br>
+                As vezes, eu confesso que eu brinco e fica parecendo que to sendo real... como ontem quando eu tirei onda do palhaço ou fiquei fingindo que eu não estava ouvindo... ou quando tirei onda com Chucky lá no carro...<br>
+                Peço perdão caso a brincadeira que eu fiz tenha parecido que eu não estava brincando... Por favor, me perdoa!</p>
+
+                <p>Mas, eu diria que já vivemos... ou melhor, eu não diria, mas já vivemos como um casal. Hoje eu tb acordei não tão pra cima, não sei pq... quer dizer, sei sim: somos conectados e não acordei tão para cima!</p>
+
+                <p>Buuuuuuttttt, eu soouuu o seeeuuu homem e eu só quero que vc esteja bem sempre!!!<br>
+                Tô passando aqui rapidinho, para te dizer minha mulher, que eu te amooo muuiitoo!<br>
+                quero te lembrar que vc é a resposta de oração que minha mão fazia comigo quando eu era pequeninho... quer dizer, mais novo, pq ainda sou pequeno kkkkkkkk<br>
+                Quero te lembrar que, sem vc, eu não sou nada....<br>
+                Quero te lembrar que vc é o meu combustível... amorzinho, sem vc, eu não sei se eu estaria aqui hj...<br>
+                Na sexta, quando ocê foi p tirar a identidade, eu estava bastante preocupado pq a moto parou p mim e eu só queria que ocê me desse notícias e enquanto vc não me dizia que tinha chegado ao shopping, eu estava vendo o waze e o google maps p saber se estava o trânsito livre até a cidade e oq estava acontecendo no uber era apenas um bug da localização...<br>
+                Eu sou dependente eternamente de ocê, minha mulher!<br>
+                Eu literalmente não sei oq seria de mim sem vc! Afinal, vc é o meu oxigênio e, se o oxigênio faltar, eu morro!<br>
+                Vc é a fotossíntese para a minha vida florescer... se eu não tiver vc, eu morro!</p>
+
+                <p>Eu quero lembrar a vc, minha mulher, que eu te amo muuiiitttooooooooooooooooooo!!<br>
+                Faz algum tempo que eu não te falo isso, mas veja......<br>
+                Vc é....</p>
+
+                <p class="acrostico">
+                <b>I</b> mpar... vc é uma mulher úniccaaaaa, incoommmpaaaaaráááááááááááááááááááááááááávvveeeeelllll!! Vc é a melhor pessoaaa desseeee munddddooooo!!<br>
+                <b>N</b> orteadora... é vc quem guia os meus passos! É por vc que dia após dia eu busco ser melhor do que o dia anterior, para viver com vc os melhores momentos e te proporcionar as melhores coisas dessaaaaaa viiiiidaaaaaa!!!!<br>
+                <b>G</b> raaaannndeeee comoo coraaaçãããoooo de mãaaaee!!! O amor que eu tenhoooo por vc não cabe em mim e o amor que cê teeemmmm por miiimmm eu não mereco, que transborda e me transforma. Você é a minha força, a minha paz e o meu porto seguro.<br>
+                <b>R</b> eluzente vc é uma mulher iluminada, marcante, que chega e muda o clima de qualquer lugar... que eu estou para baixo e vc me coloca para cimaaaaa!! Vc é uma mulher úniccaaaaa, incoommmpaaaaaráááááááááááááááááááááááááávvveeeeelllll!! Vc é a melhor pessoaaa desseeee munddddooooo!!<br>
+                <b>I</b> rresistível... entre os pontos do calvinismo está o da graça irresistível, que fala que nós eleitos não conseguimos resistir a graça de Deus e vc, é uma mulher irresistível, eu não consigo resistir a vc... vc é muuuuuiiiitoooo liiiinnddddaaaaa, vc é a mulher que eu sempre quis ter, é o padrão de mulher que eu vejo na bíblia e que eu sempre quis ter... e eu não consigo resistir a vc... é impossível eu não te querer bem... é impossível eu não querer me declarar para vc... é impossível eu não falar que eu te amoooo.. é impossível eu não querer ter vc juntinho de mim... meu amor, vc é irresistível!!<br>
+                <b>D</b> igna... vc é digna, meu amooorrziiinhooo... digna de ter e viver as melhores coisas desse mundo.... digna de viver os melhores momentos ao meu ladooo... vc é digna de receber mensagens como essa nos dias em que vc tá bem... mas também nos dias que vc está para baixo. todos os dias vc é digna... aliás... em todos os momentos vc é digna de sentir e viver o meu amor por vc!! Eu teee amooooo, minha mulher!!
+                </p>
+
+                <p class="acrostico">
+                <b>B</b> onitaaaa: vc é maaaaiiiiss que boniiitaaaaaaaaa, vc é a minhaaa deeeeuuuusssaaaa grrreeeeeeeeeeeeeeeeeeeeggggggaaaaaaaaaaaaaa!!<br>
+                <b>A</b> morosa: com vc, eu aprendi oq é o amor! Eu me sinto e sei que sou muiiitoo, mas muuuiitoooo amaaaaaaaaaaaaaadddddddddddooooooooooooo ppeeeeeeeeeeeeeellllaaaaaaaaa minha MMMooooooooooooooouuuuuuuurrrriiiiiiiiiinnnnnhhhhaaaaaaaaaaaaa!!<br>
+                <b>R</b> ara: Ocê é uma joia preciosa que Deus me deu, a pessoa mais incríííííííííveeeeeeeeeeeeelllllll e difícil de encontrar desse munddddooooo todoooo!! Em um planeta com bilhões de pessoas, ter ocê todo dia é como ganhar na loteria acumulada todo santo dia.<br>
+                <b>B</b> rilhannnteee: Meu amor, o seu brilho é marcante, daqueles que iluminam a sala inteira quando você entra e faz tudo parecer mais leve, mais bonito e cheio de vida. É impossível passar um segundo do dia sem que a sua luz passe pela minha cabeça!!! Eu te amooo demaaiisss!!<br>
+                <b>O</b> riginaaalll: meu amorzinhoo, cê é incomparável, autêntica, sem cópias e sem igual nesse universsoooo!!<br>
+                <b>S</b> ingular e sedutora: Vc tem um magnetismo (assim como o imã) que me prende em vc!! É uma mistura perfeita de uma mulher única com um charme que me desconecta do mundo inteiro. Basta um olhar para esse seu olho maraviiilhooooooosooooooo para eu esquecer qualquer problema!! Vc me domina, me atrai e me faz querer ficar preso no seu abraço e perdido na dimensão do seu olhar para o resto da vida!<br>
+                <b>A</b> fetuosa: Minha Ingridizinhaa, o seu aconchego é o meu verdadeiro lar, o colo onde eu me sinto o homem mais protegido e feliz desse munddoooo!! Esse seu afeto transborda nas pequenas coisas: na mensagem de bom dia, no cuidado que você tem comigo, no cheiro do seu perfume que eu sinto na minha roupa quando chego em casa, no carinho que cê faz em mmim.... eu te amo demmaaiisss!
+                </p>
+
+                <p class="acrostico">
+                <b>D</b> edicada: Meu amorzinho, quando eu vejo o seu esforço no dia a dia (correria em casa, lá no seu trabalho), o seu foco e o carinho com cada detalhe me dá ainda mais garra para vencer na vida.<br>
+                <b>E</b> nvolvente: Ficar perto de você me desliga do mundo lá fora; o mundo pode estar desabando como for, a rotina pode estar uma correria, mas vc me traz uma paz que eu não consigo explicar para ocê!<br>
+                <br>
+                <b>M</b> eiga: Amor da minha vida, o seu tom de voz, o seu olhar, o seu carinho, o seu beijo, as suas palavras funcionam como um calmante natural para a mim!!! Ocê consegue transformar o momento triste em um momento de pura paz!!<br>
+                <b>O</b> timista: Amorzinho, estar do seu lado é ter a certeza absoluta de que, não importa o tamanho do problema, tudo vai dar certo porque a gente tem fé e confia no nosso Deus!! E por sinal... nosso primeiro sonho realizado juntinhoss está bem próximo de irmos realizar!! O passo principal o nosso Deus nos permitiu realizar: comprar as passagens e a nossa hospedagem lá em Foz!!<br>
+                <b>U</b> nica: Eu tenho a certeza matemática de que não existe, nunca existiu e nunca vai existir ninguém igual a você nesse universo, minha vidaaa!!<br>
+                <b>R</b> omantica: A forma como você me ama, as surpresas que vc faz para mim, as mensagens que cê me manda me traz uma alegria e me faz um bem que vc nem imaginnaaa, meu amor!!<br>
+                <b>A</b> colhedora: Ingrid, o seu abraço é o melhor lugar do mundo e ele é o meu porto seguro definitivo!
+                </p>
+
+                <p class="ingles">
+                There aren’t enough words or letters in the dictionary to explain the magnitude of what I feel, but I promise to spend the rest of my days trying to show you just how big my love for you is!<br>
+                Looking at you is like watching the sun rise after a dark night: you brighten everything, chase away any shadow, and make me want to live.<br>
+                I loved you yesterday, I love you so much more today, and I will love you even more tomorrow!! I love you, my love!!
+                </p>
+            </div>
+        </div>
+    </div>
+
+    <!-- Script para adicionar um efeito suave de entrada ao abrir a página -->
+    <script>
+        document.addEventListener("DOMContentLoaded", () => {
+            const caderno = document.getElementById("caderno");
+            caderno.style.opacity = 0;
+            caderno.style.transform = "translateY(20px)";
+            caderno.style.transition = "opacity 1.5s ease, transform 1.5s ease";
+           
+            setTimeout(() => {
+                caderno.style.opacity = 1;
+                caderno.style.transform = "translateY(0)";
+            }, 300);
+        });
+    </script>
+</body>
+</html>
